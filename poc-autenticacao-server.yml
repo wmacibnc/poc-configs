@@ -27,11 +27,11 @@ spring:
     datasource:
         data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
-        password: 
+        password: 'poc'
         platform: mysql
         schema: classpath:/sql/schema.sql
         url: jdbc:mysql://localhost/oauth?verifyServerCertificate=false&useSSL=false&requireSSL=false
-        username: root
+        username: 'poc'
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
         generate-ddl: false
