@@ -22,3 +22,15 @@ security:
             client-secret: $2a$10$p9Pk0fQNAQSesI4vuvKA0OZanDD2
             resource-ids: resources
             scope: read,write
+
+zuul:
+  routes:
+    product:
+      path: /services/t1/**
+      url: http://localhost:9092/actuator/info
+    customer:
+      path: /services/t2/**
+      url: localhost:poc-eureka-server:9091
+    sale:
+      path: /services/t3/**
+      url: localhost:poc-eureka-server:9093
