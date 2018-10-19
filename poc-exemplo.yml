@@ -1,6 +1,6 @@
 server:
-  port: 0
-  contextPath: exemplo
+  port: 9096
+  context-path: exemplo
 
 eureka:
   instance:
