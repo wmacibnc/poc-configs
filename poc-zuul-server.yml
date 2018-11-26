@@ -25,12 +25,9 @@ security:
 
 zuul:
   routes:
-    product:
+    exemplo:
       path: /services/t1/**
-      serviceId: poc-exemplo:9094
-    customer:
+      url: exemplo:9094
+    exemplo:
       path: /services/t2/**
       url: poc-exemplo:9094
-    sale:
-      path: /services/t3/**
-      url: localhost:poc-exemplo:9094
