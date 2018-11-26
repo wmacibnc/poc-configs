@@ -1,7 +1,7 @@
 server:
   port: 9094
   servlet:
-      context-path:exemplo
+      context-path: /
 
 eureka:
   instance:
