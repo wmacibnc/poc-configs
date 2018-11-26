@@ -27,7 +27,7 @@ zuul:
   routes:
     product:
       path: /services/t1/**
-      serviceId: poc-exemplo
+      url: localhost:poc-exemplo:0
     customer:
       path: /services/t2/**
       url: localhost:poc-eureka-server:9091
