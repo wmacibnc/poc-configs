@@ -27,7 +27,4 @@ zuul:
   routes:
     exemplo:
       path: /services/t1/**
-      url: exemplo:9094
-    exemplo:
-      path: /services/t2/**
-      url: poc-exemplo:9094
+     
