@@ -1,5 +1,5 @@
 server:
-  port: 0
+  port: 9094
   context-path: exemplo
 
 eureka:
