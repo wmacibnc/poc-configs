@@ -30,7 +30,7 @@ zuul:
       url: localhost:poc-exemplo:0
     customer:
       path: /services/t2/**
-      url: localhost:poc-eureka-server:9091
+      url: poc-eureka-server:9091
     sale:
       path: /services/t3/**
       url: localhost:poc-eureka-server:9093
