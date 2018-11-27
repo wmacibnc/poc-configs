@@ -3,11 +3,11 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
   client:
     registerWithEureka: false
-    fetchRegistry: true
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+          defaultZone: ${EUREKA_URL:http://localhost:${server.port}}/eureka/
   server:
-    wait-time-in-ms-when-sync-empty: 3000
+    enableSelfPreservation: true
